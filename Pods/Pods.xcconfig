@@ -1,5 +1,9 @@
+ALWAYS_SEARCH_USER_PATHS = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFHTTPRequestOperationLogger" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/JRSwizzle" "${PODS_ROOT}/Headers/Kiwi" "${PODS_ROOT}/Headers/ReactiveCocoa" "${PODS_ROOT}/Headers/TestFlightSDK" "${PODS_ROOT}/Headers/libextobjc"
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/TestFlightSDK"
 OTHER_LDFLAGS = -ObjC -lTestFlight -lz -framework CoreGraphics -framework Foundation -framework MobileCoreServices -framework Security -framework SystemConfiguration -framework UIKit
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFHTTPRequestOperationLogger" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/JRSwizzle" "${PODS_ROOT}/BuildHeaders/Kiwi" "${PODS_ROOT}/BuildHeaders/ReactiveCocoa" "${PODS_ROOT}/BuildHeaders/TestFlightSDK" "${PODS_ROOT}/BuildHeaders/libextobjc"
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFHTTPRequestOperationLogger" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/JRSwizzle" "${PODS_ROOT}/Headers/Kiwi" "${PODS_ROOT}/Headers/ReactiveCocoa" "${PODS_ROOT}/Headers/TestFlightSDK" "${PODS_ROOT}/Headers/libextobjc"
 PODS_ROOT = ${SRCROOT}/../Pods
