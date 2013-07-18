@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 
-xctool -workspace Moodios.xcworkspace -scheme Moodios build test
+xctool -workspace Moodios.xcworkspace -arch armv7s -arch armv7 -scheme Moodios build test

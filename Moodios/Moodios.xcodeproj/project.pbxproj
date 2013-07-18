@@ -94,15 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12A3FB817977FAC00492C55 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				0D031ADE0D7A4D14B872B223 /* Pods.xcconfig */,
+				E58FC1257DA64DABB38E690E /* Pods-MoodiosTests.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
 		A13EDAD917951A6A00D3EDB8 = {
 			isa = PBXGroup;
 			children = (
+				A12A3FB817977FAC00492C55 /* Configs */,
 				A13EDAEB17951A6A00D3EDB8 /* Moodios */,
 				A13EDB1217951A6A00D3EDB8 /* MoodiosTests */,
 				A13EDAE417951A6A00D3EDB8 /* Frameworks */,
 				A13EDAE317951A6A00D3EDB8 /* Products */,
-				0D031ADE0D7A4D14B872B223 /* Pods.xcconfig */,
-				E58FC1257DA64DABB38E690E /* Pods-MoodiosTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -437,7 +445,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
