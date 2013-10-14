@@ -2,31 +2,33 @@
 //  MoodiosTests.m
 //  MoodiosTests
 //
-//  Created by Andrew Spinks on 16/07/13.
-//  Copyright (c) 2013 Andrew Spinks. All rights reserved.
+//  Created by Andrew Spinks on 15/10/13.
+//  Copyright (c) 2013 dius. All rights reserved.
 //
 
-#import "MoodiosTests.h"
+#import <XCTest/XCTest.h>
+
+@interface MoodiosTests : XCTestCase
+
+@end
 
 @implementation MoodiosTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in MoodiosTests");
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
