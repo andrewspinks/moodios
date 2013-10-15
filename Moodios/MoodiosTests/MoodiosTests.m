@@ -1,10 +1,3 @@
-//
-//  MoodiosTests.m
-//  MoodiosTests
-//
-//  Created by Andrew Spinks on 15/10/13.
-//  Copyright (c) 2013 dius. All rights reserved.
-//
 
 #import <XCTest/XCTest.h>
 
@@ -28,7 +21,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+  
 }
 
 @end
