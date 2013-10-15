@@ -9,8 +9,6 @@ Moodios.xcworkspace/xcuserdata
 *.ipa
 *.tar.gz
 *.dSYM.zip
-# Pods
-Pods
 .idea
 
 # tests and coverage
