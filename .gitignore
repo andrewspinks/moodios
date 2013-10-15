@@ -2,9 +2,9 @@
 build/*
 !default.xcworkspace
 !project.xcworkspace
-womm.xcodeproj/project.xcworkspace/xcuserdata
-womm.xcodeproj/xcuserdata
-womm.xcworkspace/xcuserdata
+Moodios.xcodeproj/project.xcworkspace/xcuserdata
+Moodios.xcodeproj/xcuserdata
+Moodios.xcworkspace/xcuserdata
 # Artifacts
 *.ipa
 *.tar.gz
