@@ -45,7 +45,7 @@
 		A1E8563A180CA8D200DB907F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1E8563C180CA8D200DB907F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A1E8563E180CA8D200DB907F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A1E85642180CA8D200DB907F /* Moodios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moodios-Info.plist"; sourceTree = "<group>"; };
+		A1E85642180CA8D200DB907F /* Moodios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Moodios-Info.plist"; sourceTree = "<group>"; };
 		A1E85644180CA8D200DB907F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1E85646180CA8D200DB907F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1E85648180CA8D200DB907F /* Moodios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moodios-Prefix.pch"; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		A1E85655180CA8D200DB907F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1E8565B180CA8D200DB907F /* MoodiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E8565C180CA8D200DB907F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A1E85664180CA8D200DB907F /* MoodiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoodiosTests-Info.plist"; sourceTree = "<group>"; };
+		A1E85664180CA8D200DB907F /* MoodiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MoodiosTests-Info.plist"; sourceTree = "<group>"; };
 		A1E85666180CA8D200DB907F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1E85668180CA8D200DB907F /* MoodiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodiosTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				A1E85672180CAA3300DB907F /* Config */,
-				A1E85640180CA8D200DB907F /* Moodios */,
-				A1E85662180CA8D200DB907F /* MoodiosTests */,
+				A1E85640180CA8D200DB907F /* App */,
+				A1E85662180CA8D200DB907F /* Spec */,
 				A1E85639180CA8D200DB907F /* Frameworks */,
 				A1E85638180CA8D200DB907F /* Products */,
 			);
@@ -122,7 +122,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A1E85640180CA8D200DB907F /* Moodios */ = {
+		A1E85640180CA8D200DB907F /* App */ = {
 			isa = PBXGroup;
 			children = (
 				A1E85649180CA8D200DB907F /* AppDelegate.h */,
@@ -134,7 +134,7 @@
 				A1E85655180CA8D200DB907F /* Images.xcassets */,
 				A1E85641180CA8D200DB907F /* Supporting Files */,
 			);
-			path = Moodios;
+			path = App;
 			sourceTree = "<group>";
 		};
 		A1E85641180CA8D200DB907F /* Supporting Files */ = {
@@ -148,13 +148,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A1E85662180CA8D200DB907F /* MoodiosTests */ = {
+		A1E85662180CA8D200DB907F /* Spec */ = {
 			isa = PBXGroup;
 			children = (
 				A1E85668180CA8D200DB907F /* MoodiosTests.m */,
 				A1E85663180CA8D200DB907F /* Supporting Files */,
 			);
-			path = MoodiosTests;
+			path = Spec;
 			sourceTree = "<group>";
 		};
 		A1E85663180CA8D200DB907F /* Supporting Files */ = {
