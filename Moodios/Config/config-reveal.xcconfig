@@ -1,0 +1,2 @@
+#include "config-debug.xcconfig"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework Reveal

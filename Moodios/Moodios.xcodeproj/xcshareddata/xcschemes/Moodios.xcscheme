@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1E8565A180CA8D200DB907F"
-               BuildableName = "MoodiosTests.xctest"
+               BuildableName = "MoodiosTests.octest"
                BlueprintName = "MoodiosTests"
                ReferencedContainer = "container:Moodios.xcodeproj">
             </BuildableReference>
