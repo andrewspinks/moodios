@@ -21,7 +21,9 @@ IPHONEOS_DEPLOYMENT_TARGET = 7.0
 
 // SDK
 SUPPORTED_PLATFORMS = iphonesimulator iphoneos
-ARCHS = $(ARCHS_STANDARD_32_BIT)
+ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
+
+//:completeSettings = none
 
 // Compiler warnings
 GCC_WARN_SHADOW = YES
