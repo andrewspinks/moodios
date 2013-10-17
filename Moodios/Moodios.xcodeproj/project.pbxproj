@@ -264,7 +264,7 @@
 				ORGANIZATIONNAME = dius;
 				TargetAttributes = {
 					A1E8565A180CA8D200DB907F = {
-						TestTargetID = A1E85636180CA8D200DB907F /* Moodios */;
+						TestTargetID = A1E85636180CA8D200DB907F;
 					};
 				};
 			};
@@ -460,10 +460,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1FA2D47180E0A850049BC47 /* config-reveal.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/andy/Projects/dius/ios/moodios/Moodios,
-				);
 			};
 			name = Debug;
 		};
@@ -471,10 +467,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1FA2D46180E0A850049BC47 /* config-release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/andy/Projects/dius/ios/moodios/Moodios,
-				);
 			};
 			name = Release;
 		};
