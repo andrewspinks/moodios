@@ -263,6 +263,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = dius;
 				TargetAttributes = {
+					A1E85636180CA8D200DB907F = {
+						DevelopmentTeam = HR4LVL7TKY;
+					};
 					A1E8565A180CA8D200DB907F = {
 						TestTargetID = A1E85636180CA8D200DB907F;
 					};
@@ -460,6 +463,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1FA2D47180E0A850049BC47 /* config-reveal.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -467,6 +473,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1FA2D46180E0A850049BC47 /* config-release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
