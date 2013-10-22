@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DC18B5C77A9CF3B2ECDF850 /* MoodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodController.m */; };
-		2DC18EFEB2C62D6D61E228BB /* MoodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodController.m */; };
+		2DC183154AFF0B7B7EBB4D90 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */; };
+		2DC1852897BB4B4E4F67279E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */; };
+		2DC18B5C77A9CF3B2ECDF850 /* MoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodViewController.m */; };
+		2DC18EFEB2C62D6D61E228BB /* MoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodViewController.m */; };
 		3F3EADA1BF0E42C19A683A18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07346EEE071A44C484DF369D /* libPods.a */; };
 		A1E8563B180CA8D200DB907F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563A180CA8D200DB907F /* Foundation.framework */; };
 		A1E8563D180CA8D200DB907F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563C180CA8D200DB907F /* CoreGraphics.framework */; };
@@ -50,8 +52,10 @@
 
 /* Begin PBXFileReference section */
 		07346EEE071A44C484DF369D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DC1869F2D29D46254819AC1 /* MoodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodController.h; sourceTree = "<group>"; };
-		2DC1873D4147FE8602C37697 /* MoodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodController.m; sourceTree = "<group>"; };
+		2DC1869F2D29D46254819AC1 /* MoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodViewController.h; sourceTree = "<group>"; };
+		2DC1873D4147FE8602C37697 /* MoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodViewController.m; sourceTree = "<group>"; };
+		2DC188BDFD5573D06A281782 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		33040A7E3CFD4A8186463238 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		5646C567C5EE40619647E2EC /* Pods-MoodiosTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodiosTests.xcconfig"; path = "../Pods/Pods-MoodiosTests.xcconfig"; sourceTree = "<group>"; };
 		800C4A4D55514BF595947196 /* libPods-MoodiosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoodiosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,8 +123,10 @@
 		2DC184C7EA5A68662FEC3855 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2DC1869F2D29D46254819AC1 /* MoodController.h */,
-				2DC1873D4147FE8602C37697 /* MoodController.m */,
+				2DC1869F2D29D46254819AC1 /* MoodViewController.h */,
+				2DC1873D4147FE8602C37697 /* MoodViewController.m */,
+				2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */,
+				2DC188BDFD5573D06A281782 /* RootViewController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -400,7 +406,8 @@
 			files = (
 				A1E8564B180CA8D200DB907F /* AppDelegate.m in Sources */,
 				A1E85647180CA8D200DB907F /* main.m in Sources */,
-				2DC18B5C77A9CF3B2ECDF850 /* MoodController.m in Sources */,
+				2DC18B5C77A9CF3B2ECDF850 /* MoodViewController.m in Sources */,
+				2DC183154AFF0B7B7EBB4D90 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +416,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E85669180CA8D200DB907F /* MoodiosSpec.m in Sources */,
-				2DC18EFEB2C62D6D61E228BB /* MoodController.m in Sources */,
+				2DC18EFEB2C62D6D61E228BB /* MoodViewController.m in Sources */,
+				2DC1852897BB4B4E4F67279E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,14 @@
 
 #import "AppDelegate.h"
-#import "MoodController.h"
+#import "MoodViewController.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  MoodController *rootViewController = [[MoodController alloc] init];
+  RootViewController *rootViewController = [[RootViewController alloc] init];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
 

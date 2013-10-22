@@ -1,4 +1,0 @@
-
-@interface MoodController : UIViewController
-
-@end

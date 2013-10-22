@@ -1,16 +1,13 @@
 
-#import "MoodController.h"
+#import "MoodViewController.h"
 
-@implementation MoodController {
-
-}
+@implementation MoodViewController
 
 - (id)init {
   self = [super initWithNibName:@"MoodView" bundle:[NSBundle mainBundle]];
   if (self) {
 
   }
-
   return self;
 }
 
