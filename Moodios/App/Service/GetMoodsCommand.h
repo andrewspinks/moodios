@@ -1,0 +1,3 @@
+
+@interface GetMoodsCommand : NSObject
+@end

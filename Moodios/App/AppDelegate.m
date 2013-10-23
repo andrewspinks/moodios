@@ -1,7 +1,12 @@
-
 #import "AppDelegate.h"
-#import "MoodViewController.h"
 #import "RootViewController.h"
+#import "MoodService.h"
+#import "RegisterMoodCommand.h"
+
+@interface AppDelegate ()
+@property(nonatomic, strong) MoodService *moodService;
+@end
+
 
 @implementation AppDelegate
 
@@ -9,7 +14,11 @@
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   RootViewController *rootViewController = [[RootViewController alloc] init];
+  rootViewController.delegate = self;
   self.window.rootViewController = rootViewController;
+
+  self.moodService = [[MoodService alloc] initWithBaseUrl:[NSURL URLWithString:@"http://localhost:3000"]];
+
   [self.window makeKeyAndVisible];
 
   return YES;
@@ -35,6 +44,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (UIResponder *)nextResponder {
+  return [self api];
+}
+
+- (MoodService *)api {
+  return self.moodService;
+}
+
+#pragma mark MoodServiceProtocol
+- (void)sendCommand:(RegisterMoodCommand *)command {
+  [self.api sendCommand:command];
 }
 
 @end

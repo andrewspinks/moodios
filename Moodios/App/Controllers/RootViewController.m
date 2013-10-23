@@ -1,5 +1,6 @@
 #import "RootViewController.h"
 #import "MoodViewController.h"
+#import "RegisterMoodCommand.h"
 
 @implementation RootViewController
 
@@ -7,12 +8,16 @@
   [super loadView];
 }
 
-
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
+  MoodViewController *moodViewController = [[MoodViewController alloc] init];
+  moodViewController.delegate = self;
+  [self presentViewController:moodViewController animated:YES completion:nil];
+}
 
-  MoodViewController *profileViewController = [[MoodViewController alloc] init];
-  [self presentViewController:profileViewController animated:YES completion:nil];
+- (void)sendCommand:(RegisterMoodCommand *)command {
+  __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
+  [strongDelegate sendCommand:command];
 }
 
 @end

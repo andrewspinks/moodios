@@ -1,15 +1,10 @@
-//
-//  AppDelegate.h
-//  Moodios
-//
-//  Created by Andrew Spinks on 15/10/13.
-//  Copyright (c) 2013 dius. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
+#import "MoodServiceProtocol.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, MoodServiceProtocol>
 
+@property (nonatomic, weak) id<MoodServiceProtocol> delegate;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
