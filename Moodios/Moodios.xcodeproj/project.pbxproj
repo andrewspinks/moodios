@@ -58,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		07346EEE071A44C484DF369D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC180A117B86A7B7FCD4DE2 /* CommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDelegate.h; sourceTree = "<group>"; };
 		2DC18312F0FB597238E9F297 /* MoodServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodServiceProtocol.h; sourceTree = "<group>"; };
 		2DC1853704E9A47AFA88DCD4 /* GetMoodsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMoodsCommand.h; sourceTree = "<group>"; };
 		2DC1869F2D29D46254819AC1 /* MoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodViewController.h; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */,
 				2DC1853704E9A47AFA88DCD4 /* GetMoodsCommand.h */,
 				2DC18312F0FB597238E9F297 /* MoodServiceProtocol.h */,
+				2DC180A117B86A7B7FCD4DE2 /* CommandDelegate.h */,
 			);
 			path = Service;
 			sourceTree = "<group>";

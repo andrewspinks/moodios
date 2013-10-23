@@ -1,7 +1,11 @@
 
 #import "MoodViewController.h"
 #import "RegisterMoodCommand.h"
+#import "CommandDelegate.h"
 
+
+@interface MoodViewController () <CommandDelegate>
+@end
 
 @implementation MoodViewController
 
@@ -12,6 +16,15 @@
   }
   return self;
 }
+
+- (void)success:(id)data {
+  NSLog(@"mood success %@", data);
+}
+
+- (void)failure:(id)data error:(NSError *)error {
+  NSLog(@"mood failed %@ %@", data, error);
+}
+
 
 - (IBAction)submitMood {
   RegisterMoodCommand *command = [[RegisterMoodCommand
