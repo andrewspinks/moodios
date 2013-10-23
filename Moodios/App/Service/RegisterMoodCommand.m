@@ -5,7 +5,6 @@
 @implementation RegisterMoodCommand
 
 - (void)send {
-
 }
 
 - (NSURLSession *)createSession {
@@ -21,10 +20,7 @@
 
 - (NSData *)payload {
   NSDictionary *payload = @{ @"mood" : self.mood.stringValue };
-
   NSError *error;
-  NSData *data = [NSJSONSerialization dataWithJSONObject:payload options:NSJSONWritingPrettyPrinted error:&error];
-//  NSData data
-  return data;
+  return [NSJSONSerialization dataWithJSONObject:payload options:NSJSONWritingPrettyPrinted error:&error];
 }
 @end
