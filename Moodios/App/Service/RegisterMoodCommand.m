@@ -4,13 +4,6 @@
 
 @implementation RegisterMoodCommand
 
-- (void)send {
-}
-
-- (NSURLSession *)createSession {
-  return nil;
-}
-
 - (NSURLRequest *)urlRequestFromBaseUrl:(NSURL *)url {
   NSURL *moodURL = [url URLByAppendingPathComponent:@"moods/new"];
   NSMutableURLRequest *request  = [[NSMutableURLRequest alloc] initWithURL:moodURL];

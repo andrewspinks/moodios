@@ -27,15 +27,19 @@
   [alertView show];
 }
 
-
 - (IBAction)submitMood {
+  __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
+
   [self.activityIndicator startAnimating];
+  [strongDelegate sendCommand:[self constructSubmitCommand]];
+}
+
+- (RegisterMoodCommand *)constructSubmitCommand {
   RegisterMoodCommand *command = [[RegisterMoodCommand
           alloc] init];
   command.delegate = self;
   command.mood = [NSNumber numberWithFloat:self.slider.value];
-  __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
-  [strongDelegate sendCommand:command];
+  return command;
 }
 
 @end
