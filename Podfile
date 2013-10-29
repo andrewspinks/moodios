@@ -6,4 +6,5 @@ pod 'AFNetworking'
 
 target :MoodiosTests, :exclusive => true do
   pod 'Kiwi'
+  pod 'Nocilla'
 end

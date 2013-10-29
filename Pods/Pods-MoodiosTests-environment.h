@@ -30,3 +30,9 @@
 #define COCOAPODS_VERSION_MINOR_Kiwi_SenTestingKit 2
 #define COCOAPODS_VERSION_PATCH_Kiwi_SenTestingKit 2
 
+// Nocilla
+#define COCOAPODS_POD_AVAILABLE_Nocilla
+#define COCOAPODS_VERSION_MAJOR_Nocilla 0
+#define COCOAPODS_VERSION_MINOR_Nocilla 7
+#define COCOAPODS_VERSION_PATCH_Nocilla 1
+

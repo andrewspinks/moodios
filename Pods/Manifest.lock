@@ -26,16 +26,19 @@ PODS:
   - Kiwi/SenTestingKit (2.2.2):
     - Kiwi/ARC
     - Kiwi/NonARC
+  - Nocilla (0.7.1)
   - TestFlightSDK (2.1.1-beta)
 
 DEPENDENCIES:
   - AFNetworking
   - Kiwi
+  - Nocilla
   - TestFlightSDK
 
 SPEC CHECKSUMS:
   AFNetworking: a6f11ac4ac087303e6ff87adc1ba57b0dac20ef8
   Kiwi: 03539aeb004ccd42bdbc31253617b26364315df4
+  Nocilla: 79bf72b15b7e6589d3d37ffa7540d7271fb75121
   TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
 
-COCOAPODS: 0.26.2
+COCOAPODS: 0.27.1
