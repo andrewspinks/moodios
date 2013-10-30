@@ -4,6 +4,7 @@
 
 
 @interface MoodCommand : NSObject
+
 @property (nonatomic, strong, readonly) NSString *contextPath;
 @property (nonatomic, strong, readonly) NSDictionary *payload;
 @property (nonatomic, strong, readonly) NSString *method;
@@ -12,4 +13,5 @@
 - (id)initWithMethod:(NSString *)method contextPath:(NSString *)contextPath payload:(NSDictionary *)payload;
 - (NSURLRequest *)urlRequestFromBaseUrl:(NSURL *)url;
 - (NSData *)body;
+
 @end

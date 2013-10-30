@@ -1,10 +1,8 @@
 #import "MoodCommand.h"
-
+#import "CommandDelegate.h"
 @class MoodService;
-@protocol CommandDelegate;
 
 @interface RegisterMoodCommand : MoodCommand
 
-@property (nonatomic, strong) NSNumber *mood;
-
+- (id)initWithMood:(NSNumber *)mood delegate:(id <CommandDelegate>)delegate;
 @end

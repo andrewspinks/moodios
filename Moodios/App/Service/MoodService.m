@@ -17,7 +17,7 @@
 
 - (void)sendCommand:(MoodCommand *)command {
   NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[self configuration] delegate:self delegateQueue:nil];
-  NSURLSessionUploadTask *task = [urlSession uploadTaskWithRequest:[command urlRequestFromBaseUrl:self.baseUrl] fromData:[command body] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+  NSURLSessionDataTask *task = [urlSession uploadTaskWithRequest:[command urlRequestFromBaseUrl:self.baseUrl] fromData:[command body] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
     __strong id<CommandDelegate> delegate = command.delegate;
     NSError *jsonError;
     id returnedData = [NSJSONSerialization JSONObjectWithData:data

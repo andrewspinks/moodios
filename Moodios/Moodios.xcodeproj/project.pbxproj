@@ -30,7 +30,6 @@
 		A1E85656180CA8D200DB907F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E85655180CA8D200DB907F /* Images.xcassets */; };
 		A1E8565E180CA8D200DB907F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563A180CA8D200DB907F /* Foundation.framework */; };
 		A1E85667180CA8D200DB907F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1E85665180CA8D200DB907F /* InfoPlist.strings */; };
-		A1E85669180CA8D200DB907F /* MoodiosSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E85668180CA8D200DB907F /* MoodiosSpec.m */; };
 		A1FA2D49180E0A850049BC47 /* config-common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A1FA2D44180E0A850049BC47 /* config-common.xcconfig */; };
 		A1FA2D4A180E0A850049BC47 /* config-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A1FA2D45180E0A850049BC47 /* config-debug.xcconfig */; };
 		A1FA2D4B180E0A850049BC47 /* config-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A1FA2D46180E0A850049BC47 /* config-release.xcconfig */; };
@@ -93,7 +92,6 @@
 		A1E8565B180CA8D200DB907F /* MoodiosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodiosTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E85664180CA8D200DB907F /* MoodiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MoodiosTests-Info.plist"; sourceTree = "<group>"; };
 		A1E85666180CA8D200DB907F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A1E85668180CA8D200DB907F /* MoodiosSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodiosSpec.m; sourceTree = "<group>"; };
 		A1FA2D44180E0A850049BC47 /* config-common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "config-common.xcconfig"; path = "Config/config-common.xcconfig"; sourceTree = "<group>"; };
 		A1FA2D45180E0A850049BC47 /* config-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "config-debug.xcconfig"; path = "Config/config-debug.xcconfig"; sourceTree = "<group>"; };
 		A1FA2D46180E0A850049BC47 /* config-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "config-release.xcconfig"; path = "Config/config-release.xcconfig"; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 		A1E85662180CA8D200DB907F /* Spec */ = {
 			isa = PBXGroup;
 			children = (
-				A1E85668180CA8D200DB907F /* MoodiosSpec.m */,
 				A1E85663180CA8D200DB907F /* Supporting Files */,
 				2DC18F78C742C4978F1B61D1 /* MoodServiceSpec.m */,
 			);
@@ -460,7 +457,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E85669180CA8D200DB907F /* MoodiosSpec.m in Sources */,
 				2DC18EFEB2C62D6D61E228BB /* MoodViewController.m in Sources */,
 				2DC1852897BB4B4E4F67279E /* RootViewController.m in Sources */,
 				2DC18ECF9820E319AC461C2D /* MoodService.m in Sources */,

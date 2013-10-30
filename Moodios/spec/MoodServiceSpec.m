@@ -2,7 +2,6 @@
 #import "Nocilla.h"
 #import "MoodService.h"
 #import "MoodCommand.h"
-#import "CommandDelegate.h"
 
 SPEC_BEGIN(MoodServiceSpec)
 
