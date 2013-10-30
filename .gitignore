@@ -5,6 +5,7 @@ build/*
 Moodios.xcodeproj/project.xcworkspace/xcuserdata
 Moodios.xcodeproj/xcuserdata
 Moodios.xcworkspace/xcuserdata
+Pods/Pods.xcodeproj/xcuserdata
 # Artifacts
 *.ipa
 *.tar.gz

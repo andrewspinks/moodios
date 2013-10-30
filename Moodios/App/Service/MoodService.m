@@ -15,23 +15,6 @@
   return self;
 }
 
-- (void)sendCommandConn:(MoodCommand *)command {
-
-  [NSURLConnection sendAsynchronousRequest:[command urlRequestFromBaseUrl:self.baseUrl] queue:[NSOperationQueue currentQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-    __strong id<CommandDelegate> delegate = command.delegate;
-    NSError *jsonError;
-    id returnedData = [NSJSONSerialization JSONObjectWithData:data
-                                                      options:NSJSONReadingAllowFragments
-                                                        error:&jsonError];
-    NSHTTPURLResponse *httpResp = (NSHTTPURLResponse *)response;
-    if (!connectionError && httpResp.statusCode == 201) {
-      [delegate success:returnedData];
-    } else {
-      [delegate failure:returnedData error:connectionError];
-    }
-  }];
-}
-
 - (void)sendCommand:(MoodCommand *)command {
   NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[self configuration] delegate:self delegateQueue:nil];
   NSURLSessionUploadTask *task = [urlSession uploadTaskWithRequest:[command urlRequestFromBaseUrl:self.baseUrl] fromData:[command body] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

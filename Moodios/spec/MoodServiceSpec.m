@@ -18,18 +18,23 @@ describe(@"Mood service network tests", ^{
   });
 
   describe(@"HTTP Status code handling", ^{
-    it(@"should call success on command delegate for 200 range response", ^{
-      MoodService *moodService = [[MoodService alloc] initWithBaseUrl:[NSURL URLWithString:@"http://somewhere.com"]];
+    __block id delegateMock = nil;
+    __block MoodCommand *command = nil;
+    __block MoodService *moodService = nil;
 
-      id delegateMock = [KWMock mockForProtocol:@protocol(CommandDelegate)];
+    beforeEach(^{
+      moodService = [[MoodService alloc] initWithBaseUrl:[NSURL URLWithString:@"http://somewhere.com"]];
+      delegateMock = [KWMock mockForProtocol:@protocol(CommandDelegate)];
+      command = [[MoodCommand alloc] initWithMethod:@"GET" contextPath:@"/mood" payload:@{}];
+      command.delegate = delegateMock;
+    });
+
+    it(@"should call success on command delegate for 200 range response", ^{
       __block BOOL received = NO;
       [delegateMock stub:@selector(success:) withBlock:^id(NSArray *params) {
         received = YES;
         return nil;
       }];
-
-      MoodCommand *command = [[MoodCommand alloc] initWithMethod:@"GET" contextPath:@"/mood" payload:@{}];
-      command.delegate = delegateMock;
 
       stubRequest(@"GET", @"http://somewhere.com/mood").
               andReturn(201).
@@ -39,15 +44,44 @@ describe(@"Mood service network tests", ^{
 
       [[expectFutureValue(theValue(received)) shouldEventually] beYes];
     });
+
+    it(@"should call failure on command delegate for 500 range response", ^{
+      __block BOOL received = NO;
+      [delegateMock stub:@selector(failure:error:) withBlock:^id(NSArray *params) {
+        received = YES;
+        return nil;
+      }];
+
+      stubRequest(@"GET", @"http://somewhere.com/mood").
+              andReturn(500);
+
+      [moodService sendCommand:command];
+
+      [[expectFutureValue(theValue(received)) shouldEventually] beYes];
+    });
+
+    it(@"should call failure on command delegate for network error and pass through details", ^{
+      __block BOOL received = NO;
+      __block NSError *error = [NSError errorWithDomain:@"com.dius.moodios" code:123 userInfo:@{NSLocalizedDescriptionKey:@"Failing, failing... 1, 2, 3..."}];
+      __block NSError *capturedError = nil;
+
+      [delegateMock stub:@selector(failure:error:) withBlock:^id(NSArray *params) {
+        received = YES;
+        capturedError = params[1];
+        return nil;
+      }];
+
+      stubRequest(@"GET", @"http://somewhere.com/mood").
+              andFailWithError(error);
+
+      [moodService sendCommand:command];
+
+      [[expectFutureValue(theValue(received)) shouldEventually] beYes];
+      [[expectFutureValue(theValue(capturedError.code)) shouldEventually] equal:theValue(error.code)];
+    });
   });
 
-//  describe(@"Network error handling", ^{
-//    it(@"should call success on command delegate for 200 range response", ^{
-//      NSString *string = @"blah";
-//
-//      [[string should] equal:@"blah"];
-//    });
-//  });
+
 });
 
 SPEC_END
