@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2DC183154AFF0B7B7EBB4D90 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */; };
+		2DC185157AB6911279F9C285 /* MoodCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1815511DDA364A217CECA /* MoodCommand.m */; };
 		2DC1852897BB4B4E4F67279E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */; };
 		2DC1874B9D67BE6FC3B5DDB0 /* MoodService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18DEDF17C876AA9D2DEA8 /* MoodService.m */; };
 		2DC1898B53633D3220DD613C /* GetMoodsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */; };
 		2DC18AF19702903FF879413A /* GetMoodsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */; };
 		2DC18B5C77A9CF3B2ECDF850 /* MoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodViewController.m */; };
 		2DC18B98D4E28890660E3B02 /* RegisterMoodCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18D2D7D525B01FE0993A9 /* RegisterMoodCommand.m */; };
+		2DC18E4BD3693F42AA4E0728 /* MoodCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1815511DDA364A217CECA /* MoodCommand.m */; };
 		2DC18ECF9820E319AC461C2D /* MoodService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18DEDF17C876AA9D2DEA8 /* MoodService.m */; };
 		2DC18EFEB2C62D6D61E228BB /* MoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodViewController.m */; };
+		2DC18F5E0DA656D884833233 /* MoodServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18F78C742C4978F1B61D1 /* MoodServiceSpec.m */; };
 		2DC18FF685C8CBE0281E562E /* RegisterMoodCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18D2D7D525B01FE0993A9 /* RegisterMoodCommand.m */; };
 		3F3EADA1BF0E42C19A683A18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07346EEE071A44C484DF369D /* libPods.a */; };
+		A1AFB6E218208E9600294221 /* libPods-MoodiosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AFB6E118208E9600294221 /* libPods-MoodiosTests.a */; };
 		A1E8563B180CA8D200DB907F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563A180CA8D200DB907F /* Foundation.framework */; };
 		A1E8563D180CA8D200DB907F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563C180CA8D200DB907F /* CoreGraphics.framework */; };
 		A1E85645180CA8D200DB907F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1E85643180CA8D200DB907F /* InfoPlist.strings */; };
@@ -43,7 +47,6 @@
 		A1FA2D5F180E0FFF0049BC47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FA2D54180E0FC70049BC47 /* CoreGraphics.framework */; };
 		A1FA2D60180E10090049BC47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563C180CA8D200DB907F /* CoreGraphics.framework */; };
 		A1FD42B31810F05400180803 /* MoodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1FD42B21810F05400180803 /* MoodView.xib */; };
-		B5EBB824734A4541B7704A6E /* libPods-MoodiosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C4A4D55514BF595947196 /* libPods-MoodiosTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,20 +62,24 @@
 /* Begin PBXFileReference section */
 		07346EEE071A44C484DF369D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC180A117B86A7B7FCD4DE2 /* CommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDelegate.h; sourceTree = "<group>"; };
+		2DC1815511DDA364A217CECA /* MoodCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodCommand.m; sourceTree = "<group>"; };
 		2DC18312F0FB597238E9F297 /* MoodServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodServiceProtocol.h; sourceTree = "<group>"; };
 		2DC1853704E9A47AFA88DCD4 /* GetMoodsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMoodsCommand.h; sourceTree = "<group>"; };
 		2DC1869F2D29D46254819AC1 /* MoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodViewController.h; sourceTree = "<group>"; };
 		2DC1873D4147FE8602C37697 /* MoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodViewController.m; sourceTree = "<group>"; };
 		2DC188BDFD5573D06A281782 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		2DC188E433403C30207387C9 /* RegisterMoodCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMoodCommand.h; sourceTree = "<group>"; };
+		2DC188FF329A845220817AC7 /* MoodCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodCommand.h; sourceTree = "<group>"; };
 		2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMoodsCommand.m; sourceTree = "<group>"; };
 		2DC18C9EBC7E0E7D03F89BA9 /* MoodService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodService.h; sourceTree = "<group>"; };
 		2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		2DC18D2D7D525B01FE0993A9 /* RegisterMoodCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterMoodCommand.m; sourceTree = "<group>"; };
 		2DC18DEDF17C876AA9D2DEA8 /* MoodService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodService.m; sourceTree = "<group>"; };
+		2DC18F78C742C4978F1B61D1 /* MoodServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoodServiceSpec.m; path = spec/MoodServiceSpec.m; sourceTree = SOURCE_ROOT; };
 		33040A7E3CFD4A8186463238 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		5646C567C5EE40619647E2EC /* Pods-MoodiosTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodiosTests.xcconfig"; path = "../Pods/Pods-MoodiosTests.xcconfig"; sourceTree = "<group>"; };
 		800C4A4D55514BF595947196 /* libPods-MoodiosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoodiosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AFB6E118208E9600294221 /* libPods-MoodiosTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MoodiosTests.a"; path = "../Pods/build/Debug-iphoneos/libPods-MoodiosTests.a"; sourceTree = "<group>"; };
 		A1E85637180CA8D200DB907F /* Moodios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E8563A180CA8D200DB907F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1E8563C180CA8D200DB907F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AFB6E218208E9600294221 /* libPods-MoodiosTests.a in Frameworks */,
 				A1FA2D5B180E0FF40049BC47 /* SystemConfiguration.framework in Frameworks */,
 				A1FA2D59180E0FE60049BC47 /* Security.framework in Frameworks */,
 				A1FA2D57180E0FD60049BC47 /* MobileCoreServices.framework in Frameworks */,
@@ -127,7 +135,6 @@
 				A1FA2D60180E10090049BC47 /* CoreGraphics.framework in Frameworks */,
 				A1FA2D53180E0F590049BC47 /* SenTestingKit.framework in Frameworks */,
 				A1E8565E180CA8D200DB907F /* Foundation.framework in Frameworks */,
-				B5EBB824734A4541B7704A6E /* libPods-MoodiosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,8 @@
 				2DC1853704E9A47AFA88DCD4 /* GetMoodsCommand.h */,
 				2DC18312F0FB597238E9F297 /* MoodServiceProtocol.h */,
 				2DC180A117B86A7B7FCD4DE2 /* CommandDelegate.h */,
+				2DC1815511DDA364A217CECA /* MoodCommand.m */,
+				2DC188FF329A845220817AC7 /* MoodCommand.h */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 		A1E85639180CA8D200DB907F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1AFB6E118208E9600294221 /* libPods-MoodiosTests.a */,
 				A1FA2D5A180E0FF40049BC47 /* SystemConfiguration.framework */,
 				A1FA2D58180E0FE60049BC47 /* Security.framework */,
 				A1FA2D56180E0FD60049BC47 /* MobileCoreServices.framework */,
@@ -227,6 +237,7 @@
 			children = (
 				A1E85668180CA8D200DB907F /* MoodiosSpec.m */,
 				A1E85663180CA8D200DB907F /* Supporting Files */,
+				2DC18F78C742C4978F1B61D1 /* MoodServiceSpec.m */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -441,6 +452,7 @@
 				2DC1874B9D67BE6FC3B5DDB0 /* MoodService.m in Sources */,
 				2DC18B98D4E28890660E3B02 /* RegisterMoodCommand.m in Sources */,
 				2DC1898B53633D3220DD613C /* GetMoodsCommand.m in Sources */,
+				2DC18E4BD3693F42AA4E0728 /* MoodCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +466,8 @@
 				2DC18ECF9820E319AC461C2D /* MoodService.m in Sources */,
 				2DC18FF685C8CBE0281E562E /* RegisterMoodCommand.m in Sources */,
 				2DC18AF19702903FF879413A /* GetMoodsCommand.m in Sources */,
+				2DC18F5E0DA656D884833233 /* MoodServiceSpec.m in Sources */,
+				2DC185157AB6911279F9C285 /* MoodCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -498,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};

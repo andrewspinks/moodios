@@ -1,11 +1,10 @@
+#import "MoodCommand.h"
+
 @class MoodService;
 @protocol CommandDelegate;
 
-@interface RegisterMoodCommand : NSObject
+@interface RegisterMoodCommand : MoodCommand
 
 @property (nonatomic, strong) NSNumber *mood;
-@property (nonatomic, weak) id<CommandDelegate> delegate;
 
-- (NSURLRequest *)urlRequestFromBaseUrl:(NSURL *)url;
-- (NSData *)payload;
 @end

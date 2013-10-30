@@ -19,6 +19,7 @@ PODS:
   - AFNetworking/Serialization (2.0.1)
   - AFNetworking/UIKit (2.0.1):
     - AFNetworking/NSURLConnection
+  - JRSwizzle (1.0)
   - Kiwi (2.2.2):
     - Kiwi/SenTestingKit
   - Kiwi/ARC (2.2.2)
@@ -26,19 +27,25 @@ PODS:
   - Kiwi/SenTestingKit (2.2.2):
     - Kiwi/ARC
     - Kiwi/NonARC
-  - Nocilla (0.7.1)
+  - Nocilla (0.7.1):
+    - JRSwizzle (~> 1.0)
   - TestFlightSDK (2.1.1-beta)
 
 DEPENDENCIES:
   - AFNetworking
   - Kiwi
-  - Nocilla
+  - Nocilla (from `https://github.com/andrewspinks/Nocilla`)
   - TestFlightSDK
+
+EXTERNAL SOURCES:
+  Nocilla:
+    :git: https://github.com/andrewspinks/Nocilla
 
 SPEC CHECKSUMS:
   AFNetworking: a6f11ac4ac087303e6ff87adc1ba57b0dac20ef8
+  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
   Kiwi: 03539aeb004ccd42bdbc31253617b26364315df4
-  Nocilla: 79bf72b15b7e6589d3d37ffa7540d7271fb75121
+  Nocilla: 91be6f8861365e82123992eba3bcd6cf7b23a9e3
   TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
 
 COCOAPODS: 0.27.1

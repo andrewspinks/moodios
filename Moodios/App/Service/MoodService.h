@@ -1,6 +1,6 @@
 #import "MoodServiceProtocol.h"
 
-@class RegisterMoodCommand;
+@class MoodCommand;
 
 @interface MoodService : UIResponder<MoodServiceProtocol>
 

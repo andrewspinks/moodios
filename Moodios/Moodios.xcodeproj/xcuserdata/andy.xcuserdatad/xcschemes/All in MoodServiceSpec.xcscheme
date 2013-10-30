@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F4F94C9F9C74A879CCA3E42"
-               BuildableName = "libPods-MoodiosTests.a"
-               BlueprintName = "Pods-MoodiosTests"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "A1E8565A180CA8D200DB907F"
+               BuildableName = "MoodiosTests.octest"
+               BlueprintName = "MoodiosTests"
+               ReferencedContainer = "container:Moodios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1E8565A180CA8D200DB907F"
+               BuildableName = "MoodiosTests.octest"
+               BlueprintName = "MoodiosTests"
+               ReferencedContainer = "container:Moodios.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

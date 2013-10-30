@@ -1,7 +1,7 @@
-@class RegisterMoodCommand;
+@class MoodCommand;
 
 @protocol MoodServiceProtocol <NSObject>
 
--(void)sendCommand:(RegisterMoodCommand *)command;
+-(void)sendCommand:(MoodCommand *)command;
 
 @end

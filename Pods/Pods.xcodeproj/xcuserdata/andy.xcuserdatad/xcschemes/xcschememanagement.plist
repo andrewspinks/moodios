@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MoodiosTests-JRSwizzle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MoodiosTests-Kiwi.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4F6909DDEE4347B799C3D7A6</key>
+		<key>2F4F94C9F9C74A879CCA3E42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5AF97CE80908407896F58B58</key>
+		<key>30A1D413A6154DB5887DC1E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8314E3CD465944E68DCC5B57</key>
+		<key>32521D04C98F49A7A4ABD2EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7C1A9D271AA44B98DAFA31F</key>
+		<key>86F2C2CB79C84642B2B3B493</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B139EC60F980494EACDD3964</key>
+		<key>87939B56650743F6930B1299</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D788290CCA3341F3A9077B24</key>
+		<key>A40A3833A0634A3F8A076D9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6E231960C4A4E17B7B8FB71</key>
 		<dict>
 			<key>primary</key>
 			<true/>

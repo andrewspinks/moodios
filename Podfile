@@ -6,5 +6,5 @@ pod 'AFNetworking'
 
 target :MoodiosTests, :exclusive => true do
   pod 'Kiwi'
-  pod 'Nocilla'
+  pod 'Nocilla', :git => 'https://github.com/andrewspinks/Nocilla'
 end
