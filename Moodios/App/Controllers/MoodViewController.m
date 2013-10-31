@@ -29,11 +29,7 @@
 - (IBAction)submitMood {
   __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
   [self.activityIndicator startAnimating];
-  [strongDelegate sendCommand:[self constructSubmitCommand]];
-}
-
-- (RegisterMoodCommand *)constructSubmitCommand {
-  return [[RegisterMoodCommand alloc] initWithMood:[NSNumber numberWithFloat:self.slider.value] delegate:self];
+  [strongDelegate sendCommand:[[RegisterMoodCommand alloc] initWithMood:[NSNumber numberWithFloat:self.slider.value] delegate:self]];
 }
 
 @end

@@ -26,7 +26,7 @@ describe(@"Mood service network tests", ^{
     beforeEach(^{
       moodService = [[MoodService alloc] initWithBaseUrl:[NSURL URLWithString:@"http://somewhere.com"]];
       delegateMock = [KWMock mockForProtocol:@protocol(CommandDelegate)];
-      command = [[MoodCommand alloc] initWithMethod:@"GET" contextPath:@"/mood" payload:@{}];
+      command = [[GetMoodsCommand alloc] initWithMethod:@"GET" contextPath:@"/mood"];
       command.delegate = delegateMock;
     });
 
@@ -37,8 +37,8 @@ describe(@"Mood service network tests", ^{
         return nil;
       }];
 
-      stubRequest(@"GET", @"http://somewhere.com/mood").
-              andReturn(201).
+      stubRequest(@"GET", @"http://somewhere.com/moods").
+              andReturn(200).
               withHeaders(@{ @"Content-Type": @"application/json" });
 
       [moodService sendCommand:command];
@@ -53,7 +53,7 @@ describe(@"Mood service network tests", ^{
         return nil;
       }];
 
-      stubRequest(@"GET", @"http://somewhere.com/mood").
+      stubRequest(@"GET", @"http://somewhere.com/moods").
               andReturn(500);
 
       [moodService sendCommand:command];
@@ -72,7 +72,7 @@ describe(@"Mood service network tests", ^{
         return nil;
       }];
 
-      stubRequest(@"GET", @"http://somewhere.com/mood").
+      stubRequest(@"GET", @"http://somewhere.com/moods").
               andFailWithError(error);
 
       [moodService sendCommand:command];

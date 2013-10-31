@@ -15,7 +15,7 @@
   [self presentViewController:moodViewController animated:YES completion:nil];
 }
 
-- (void)sendCommand:(RegisterMoodCommand *)command {
+- (void)sendCommand:(MoodCommand *)command {
   __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
   [strongDelegate sendCommand:command];
 }

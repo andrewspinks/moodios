@@ -55,7 +55,7 @@
 }
 
 #pragma mark MoodServiceProtocol
-- (void)sendCommand:(RegisterMoodCommand *)command {
+- (void)sendCommand:(MoodCommand *)command {
   [self.api sendCommand:command];
 }
 

@@ -5,4 +5,5 @@
 @interface RegisterMoodCommand : MoodCommand
 
 - (id)initWithMood:(NSNumber *)mood delegate:(id <CommandDelegate>)delegate;
+
 @end
