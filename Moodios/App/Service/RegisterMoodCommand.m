@@ -11,18 +11,14 @@
 - (id)initWithMood:(NSNumber *)mood delegate:(id<CommandDelegate>)delegate {
   if (self = [super initWithMethod:@"POST" contextPath:@"moods/new"]) {
     self.delegate = delegate;
-    self.payload = @{ @"mood" : mood.stringValue };
+    self.payload = @{ @"mood" : mood };
   }
   return self;
 }
 
 - (NSData *)body {
   NSError *error;
-  if(self.payload) {
-    return [NSJSONSerialization dataWithJSONObject:self.payload options:NSJSONWritingPrettyPrinted error:&error];
-  } else {
-    return nil;
-  }
+  return [NSJSONSerialization dataWithJSONObject:self.payload options:NSJSONWritingPrettyPrinted error:&error];
 }
 
 - (NSURLSessionDataTask *)taskForSession:(NSURLSession *)session baseUrl:(NSURL *)baseUrl {

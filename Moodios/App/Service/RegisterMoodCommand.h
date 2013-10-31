@@ -4,6 +4,7 @@
 
 @interface RegisterMoodCommand : MoodCommand
 
+@property (nonatomic, retain, readonly) NSDictionary *payload;
 - (id)initWithMood:(NSNumber *)mood delegate:(id <CommandDelegate>)delegate;
 
 @end

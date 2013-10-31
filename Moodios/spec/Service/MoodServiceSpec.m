@@ -60,7 +60,7 @@ describe(@"Mood service network tests", ^{
       }];
 
       stubRequest(@"POST", @"http://somewhere.com/moods/new").
-              withHeaders(@{ @"Content-Length": @"18", @"Content-Type": @"application/json" }).
+              withHeaders(@{ @"Content-Type": @"application/json" }).
               andReturn(201);
 
       [moodService sendCommand:postCommand];
