@@ -7,7 +7,7 @@
 }
 
 - (NSString *)contextPath {
-  return @"moods";
+  return @"/moods";
 }
 
 @end

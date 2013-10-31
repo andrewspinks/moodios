@@ -29,7 +29,11 @@
 
 - (NSData *)body {
   NSError *error;
-  return [NSJSONSerialization dataWithJSONObject:self.payload options:NSJSONWritingPrettyPrinted error:&error];
+  if(self.payload) {
+    return [NSJSONSerialization dataWithJSONObject:self.payload options:NSJSONWritingPrettyPrinted error:&error];
+  } else {
+    return nil;
+  }
 }
 
 @end

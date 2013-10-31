@@ -17,7 +17,7 @@ describe(@"Mood command spec", ^{
     });
 
     it(@"should be use correct path", ^{
-      [[subject.contextPath should] equal:@"moods"];
+      [[subject.contextPath should] equal:@"/moods"];
     });
   });
 
