@@ -1,6 +1,13 @@
 #import "GetMoodsCommand.h"
 
-@implementation GetMoodsCommand {
+@implementation GetMoodsCommand
 
+- (NSString *)method {
+  return @"GET";
 }
+
+- (NSString *)contextPath {
+  return @"moods";
+}
+
 @end

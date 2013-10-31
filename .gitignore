@@ -3,7 +3,7 @@ build/*
 !default.xcworkspace
 !project.xcworkspace
 Moodios.xcodeproj/project.xcworkspace/xcuserdata
-Moodios.xcodeproj/xcuserdata
+Moodios/Moodios.xcodeproj/xcuserdata
 Moodios.xcworkspace/xcuserdata
 Pods/Pods.xcodeproj/xcuserdata
 # Artifacts

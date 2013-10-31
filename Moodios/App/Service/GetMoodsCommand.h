@@ -1,3 +1,4 @@
+#import "MoodCommand.h"
 
-@interface GetMoodsCommand : NSObject
+@interface GetMoodsCommand : MoodCommand
 @end
