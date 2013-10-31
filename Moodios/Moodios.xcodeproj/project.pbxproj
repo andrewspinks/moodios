@@ -11,6 +11,7 @@
 		2DC1837FAB73C07A034ED2AF /* GetMoodsCommandSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1878B18DB21F2040FE72C /* GetMoodsCommandSpec.m */; };
 		2DC185157AB6911279F9C285 /* MoodCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1815511DDA364A217CECA /* MoodCommand.m */; };
 		2DC1852897BB4B4E4F67279E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */; };
+		2DC1855588EF766AD68D0B42 /* CommandSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18345B7C00E6BEDD9E3E7 /* CommandSpec.m */; };
 		2DC1874B9D67BE6FC3B5DDB0 /* MoodService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18DEDF17C876AA9D2DEA8 /* MoodService.m */; };
 		2DC1898B53633D3220DD613C /* GetMoodsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */; };
 		2DC18AF19702903FF879413A /* GetMoodsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */; };
@@ -64,6 +65,7 @@
 		2DC180A117B86A7B7FCD4DE2 /* CommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDelegate.h; sourceTree = "<group>"; };
 		2DC1815511DDA364A217CECA /* MoodCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodCommand.m; sourceTree = "<group>"; };
 		2DC18312F0FB597238E9F297 /* MoodServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodServiceProtocol.h; sourceTree = "<group>"; };
+		2DC18345B7C00E6BEDD9E3E7 /* CommandSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommandSpec.m; path = spec/Service/CommandSpec.m; sourceTree = SOURCE_ROOT; };
 		2DC1853704E9A47AFA88DCD4 /* GetMoodsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMoodsCommand.h; sourceTree = "<group>"; };
 		2DC1869F2D29D46254819AC1 /* MoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodViewController.h; sourceTree = "<group>"; };
 		2DC1873D4147FE8602C37697 /* MoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodViewController.m; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				2DC18D9430ADC1CB79CB7200 /* MoodServiceSpec.m */,
 				2DC1878B18DB21F2040FE72C /* GetMoodsCommandSpec.m */,
+				2DC18345B7C00E6BEDD9E3E7 /* CommandSpec.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				2DC185157AB6911279F9C285 /* MoodCommand.m in Sources */,
 				2DC18F203460B55E49B8E4ED /* MoodServiceSpec.m in Sources */,
 				2DC1837FAB73C07A034ED2AF /* GetMoodsCommandSpec.m in Sources */,
+				2DC1855588EF766AD68D0B42 /* CommandSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

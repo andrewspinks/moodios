@@ -26,7 +26,9 @@
 }
 
 - (NSURLSessionDataTask *)taskForSession:(NSURLSession *)session baseUrl:(NSURL *)baseUrl {
-  return nil;
+  @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                 reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+                               userInfo:nil];
 }
 
 - (void)processResult:(NSURLResponse *)response data:(NSData *)data error:(NSError *)error {

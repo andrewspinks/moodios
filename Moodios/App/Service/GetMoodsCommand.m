@@ -7,7 +7,7 @@
 }
 
 - (NSString *)contextPath {
-  return @"/moods";
+  return @"moods";
 }
 
 - (NSURLSessionDataTask *)taskForSession:(NSURLSession *)session baseUrl:(NSURL *)baseUrl {

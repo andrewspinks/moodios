@@ -9,7 +9,7 @@
 @implementation RegisterMoodCommand
 
 - (id)initWithMood:(NSNumber *)mood delegate:(id<CommandDelegate>)delegate {
-  if (self = [super initWithMethod:@"POST" contextPath:@"/moods/new"]) {
+  if (self = [super initWithMethod:@"POST" contextPath:@"moods/new"]) {
     self.delegate = delegate;
     self.payload = @{ @"mood" : mood.stringValue };
   }
