@@ -14,6 +14,7 @@
 		2DC1852897BB4B4E4F67279E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */; };
 		2DC1855588EF766AD68D0B42 /* CommandSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18345B7C00E6BEDD9E3E7 /* CommandSpec.m */; };
 		2DC1874B9D67BE6FC3B5DDB0 /* MoodService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC18DEDF17C876AA9D2DEA8 /* MoodService.m */; };
+		2DC18887D93BED94521EBEF1 /* MoodListTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC18A02FDADCE7E749B3217 /* MoodListTableView.xib */; };
 		2DC1898B53633D3220DD613C /* GetMoodsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */; };
 		2DC18AF19702903FF879413A /* GetMoodsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */; };
 		2DC18B5C77A9CF3B2ECDF850 /* MoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1873D4147FE8602C37697 /* MoodViewController.m */; settings = {COMPILER_FLAGS = "-Wno-undeclared-selector"; }; };
@@ -26,8 +27,7 @@
 		A185BB3C1821DB7A00183C93 /* libPods-MoodiosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A185BB3B1821DB7A00183C93 /* libPods-MoodiosTests.a */; };
 		A185BB411821DBA600183C93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A185BB401821DBA600183C93 /* libPods.a */; };
 		A185BB431821DBAF00183C93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A185BB421821DBAF00183C93 /* libPods.a */; };
-		A185BB4918231DE600183C93 /* MoodListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A185BB4718231DE600183C93 /* MoodListTableViewController.m */; };
-		A185BB4A18231DE600183C93 /* MoodListTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A185BB4818231DE600183C93 /* MoodListTableView.xib */; };
+		A185BB4918231DE600183C93 /* MoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A185BB4718231DE600183C93 /* MoodTableViewController.m */; };
 		A1E8563B180CA8D200DB907F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563A180CA8D200DB907F /* Foundation.framework */; };
 		A1E8563D180CA8D200DB907F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8563C180CA8D200DB907F /* CoreGraphics.framework */; };
 		A1E85645180CA8D200DB907F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1E85643180CA8D200DB907F /* InfoPlist.strings */; };
@@ -78,6 +78,7 @@
 		2DC188E433403C30207387C9 /* RegisterMoodCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMoodCommand.h; sourceTree = "<group>"; };
 		2DC188FF329A845220817AC7 /* MoodCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodCommand.h; sourceTree = "<group>"; };
 		2DC189428F60AF9481F074E4 /* GetMoodsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMoodsCommand.m; sourceTree = "<group>"; };
+		2DC18A02FDADCE7E749B3217 /* MoodListTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoodListTableView.xib; sourceTree = "<group>"; };
 		2DC18C9EBC7E0E7D03F89BA9 /* MoodService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodService.h; sourceTree = "<group>"; };
 		2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		2DC18D2D7D525B01FE0993A9 /* RegisterMoodCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterMoodCommand.m; sourceTree = "<group>"; };
@@ -88,9 +89,8 @@
 		A185BB3B1821DB7A00183C93 /* libPods-MoodiosTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MoodiosTests.a"; path = "../Pods/build/Debug-iphoneos/libPods-MoodiosTests.a"; sourceTree = "<group>"; };
 		A185BB401821DBA600183C93 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		A185BB421821DBAF00183C93 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
-		A185BB4618231DE600183C93 /* MoodListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodListTableViewController.h; sourceTree = "<group>"; };
-		A185BB4718231DE600183C93 /* MoodListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodListTableViewController.m; sourceTree = "<group>"; };
-		A185BB4818231DE600183C93 /* MoodListTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoodListTableView.xib; path = ../Controllers/MoodListTableView.xib; sourceTree = "<group>"; };
+		A185BB4618231DE600183C93 /* MoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTableViewController.h; sourceTree = "<group>"; };
+		A185BB4718231DE600183C93 /* MoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTableViewController.m; sourceTree = "<group>"; };
 		A1E85637180CA8D200DB907F /* Moodios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E8563A180CA8D200DB907F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1E8563C180CA8D200DB907F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,8 +170,8 @@
 				2DC1873D4147FE8602C37697 /* MoodViewController.m */,
 				2DC18CF6F7C684CC91FDB6A7 /* RootViewController.m */,
 				2DC188BDFD5573D06A281782 /* RootViewController.h */,
-				A185BB4618231DE600183C93 /* MoodListTableViewController.h */,
-				A185BB4718231DE600183C93 /* MoodListTableViewController.m */,
+				A185BB4618231DE600183C93 /* MoodTableViewController.h */,
+				A185BB4718231DE600183C93 /* MoodTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -291,8 +291,8 @@
 		A1FD42B11810F05400180803 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A185BB4818231DE600183C93 /* MoodListTableView.xib */,
 				A1FD42B21810F05400180803 /* MoodView.xib */,
+				2DC18A02FDADCE7E749B3217 /* MoodListTableView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,11 +384,11 @@
 				A1FA2D4B180E0A850049BC47 /* config-release.xcconfig in Resources */,
 				A1E85656180CA8D200DB907F /* Images.xcassets in Resources */,
 				A1FA2D4D180E0A850049BC47 /* config-test.xcconfig in Resources */,
-				A185BB4A18231DE600183C93 /* MoodListTableView.xib in Resources */,
 				A1FA2D49180E0A850049BC47 /* config-common.xcconfig in Resources */,
 				A1E85645180CA8D200DB907F /* InfoPlist.strings in Resources */,
 				A1FA2D4C180E0A850049BC47 /* config-reveal.xcconfig in Resources */,
 				A1FD42B31810F05400180803 /* MoodView.xib in Resources */,
+				2DC18887D93BED94521EBEF1 /* MoodListTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +474,7 @@
 				A1E85647180CA8D200DB907F /* main.m in Sources */,
 				2DC18B5C77A9CF3B2ECDF850 /* MoodViewController.m in Sources */,
 				2DC183154AFF0B7B7EBB4D90 /* RootViewController.m in Sources */,
-				A185BB4918231DE600183C93 /* MoodListTableViewController.m in Sources */,
+				A185BB4918231DE600183C93 /* MoodTableViewController.m in Sources */,
 				2DC1874B9D67BE6FC3B5DDB0 /* MoodService.m in Sources */,
 				2DC18B98D4E28890660E3B02 /* RegisterMoodCommand.m in Sources */,
 				2DC1898B53633D3220DD613C /* GetMoodsCommand.m in Sources */,

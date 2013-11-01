@@ -1,7 +1,7 @@
 #import "RootViewController.h"
 #import "MoodViewController.h"
 #import "RegisterMoodCommand.h"
-#import "MoodListTableViewController.h"
+#import "MoodTableViewController.h"
 
 @interface RootViewController()
 @property (nonatomic, strong) UINavigationController *navController;
@@ -15,7 +15,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  MoodListTableViewController *moodViewController = [[MoodListTableViewController alloc] init];
+  MoodTableViewController *moodViewController = [[MoodTableViewController alloc] init];
   self.navController = [[UINavigationController alloc] initWithRootViewController:moodViewController];
 
   UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Record" style:UIBarButtonItemStylePlain target:self action:@selector(recordMood:)];

@@ -3,6 +3,6 @@
 
 @protocol MoodServiceProtocol;
 
-@interface MoodListTableViewController : UITableViewController
+@interface MoodTableViewController : UITableViewController
 @property (nonatomic, weak) id<MoodServiceProtocol> delegate;
 @end

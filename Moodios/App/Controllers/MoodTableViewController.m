@@ -1,13 +1,13 @@
-#import "MoodListTableViewController.h"
+#import "MoodTableViewController.h"
 #import "CommandDelegate.h"
 #import "GetMoodsCommand.h"
 #import "MoodServiceProtocol.h"
 
-@interface MoodListTableViewController () <CommandDelegate>
+@interface MoodTableViewController () <CommandDelegate>
 @property(nonatomic, strong) NSArray *moodList;
 @end
 
-@implementation MoodListTableViewController
+@implementation MoodTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
