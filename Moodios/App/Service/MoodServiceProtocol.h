@@ -1,4 +1,5 @@
 @class MoodCommand;
+@class MoodViewController;
 
 @protocol MoodServiceProtocol <NSObject>
 

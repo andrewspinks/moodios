@@ -1,6 +1,7 @@
 #import "RegisterMoodCommand.h"
 #import "MoodCommand.h"
 #import "CommandDelegate.h"
+#import "MoodViewController.h"
 
 
 @interface MoodCommand()

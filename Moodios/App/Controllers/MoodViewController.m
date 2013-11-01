@@ -18,6 +18,7 @@
 
 - (void)success:(id)data {
   [self.activityIndicator stopAnimating];
+  [[UIApplication sharedApplication] sendAction:@selector(flipBack:) to:nil from:self forEvent:nil];
 }
 
 - (void)failure:(id)data error:(NSError *)error {
@@ -27,6 +28,8 @@
 }
 
 - (IBAction)submitMood {
+  self.navigationItem.leftBarButtonItem.enabled = NO;
+//  self.navigationItem.leftBarButtonItem.
   __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
   [self.activityIndicator startAnimating];
   [strongDelegate sendCommand:[[RegisterMoodCommand alloc] initWithMood:[NSNumber numberWithFloat:self.slider.value] delegate:self]];

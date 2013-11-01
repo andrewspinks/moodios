@@ -2,6 +2,7 @@
 #import "RootViewController.h"
 #import "MoodService.h"
 #import "RegisterMoodCommand.h"
+#import "MoodViewController.h"
 
 @interface AppDelegate ()
 @property(nonatomic, strong) MoodService *moodService;
