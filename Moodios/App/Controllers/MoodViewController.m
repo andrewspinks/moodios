@@ -29,7 +29,6 @@
 
 - (IBAction)submitMood {
   self.navigationItem.leftBarButtonItem.enabled = NO;
-//  self.navigationItem.leftBarButtonItem.
   __strong id<MoodServiceProtocol> strongDelegate = self.delegate;
   [self.activityIndicator startAnimating];
   [strongDelegate sendCommand:[[RegisterMoodCommand alloc] initWithMood:[NSNumber numberWithFloat:self.slider.value] delegate:self]];
